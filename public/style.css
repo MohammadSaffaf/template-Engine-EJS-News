@@ -1,0 +1,22 @@
+div {
+  width: 80%;
+  margin-left: 10%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+article {
+  width: 95%;
+}
+img {
+  width: 100%;
+}
+section {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+a {
+  color: black;
+  font-size: 20px;
+}

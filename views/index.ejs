@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+    <div>
+
+        <% myNews.forEach(news=>{%>
+            <article>
+                <h1>
+                    <%= news.title %>
+                </h1>
+                <h4>
+                    <%= news.publishedAt %>
+                </h4>
+                <img src="<%= news.urlToImage %> " alt="">
+                <p>
+                    <%= news.description %>
+                </p>
+                <section>
+                    <h3>
+                        <%= news.author %>
+                    </h3>
+                    <a href="<%= news.url %> ">Click4More</a>
+                </section>
+
+            </article>
+            <% }) %>
+
+
+    </div>
+    <%- include('./partials/footer') %>
